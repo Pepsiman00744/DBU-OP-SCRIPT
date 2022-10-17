@@ -64,7 +64,7 @@ local RebirthFarm = Main.Toggle({
 })
 
 local GodMode = Main.Toggle({
-    Text = 'GodMode',
+    Text = 'Hentai Mode',
     Callback = function(bool)
         pcall(function()
             if bool then
@@ -76,7 +76,7 @@ local GodMode = Main.Toggle({
     end 
 })
 local AutoTransform = Main.Toggle({
-    Text = 'Auto-Transform',
+    Text = 'Auto-Hentai',
     Callback = function(bool)
         pcall(function()
             while bool and wait() do 
@@ -86,7 +86,7 @@ local AutoTransform = Main.Toggle({
     end 
 })
 local AutoRebirth = Main.Toggle({
-    Text = 'Rebirth',
+    Text = 'Iseekai Hentai',
     Callback = function(bool)
         while bool and wait() do 
             rebirthRemote:InvokeServer()
@@ -94,7 +94,7 @@ local AutoRebirth = Main.Toggle({
     end 
 })
 local AutoCharge = Main.Toggle({
-    Text = 'Auto-Charge',
+    Text = 'Auto Hentai Power Charge',
     Callback = function(bool) 
         while bool and wait() do 
             game:GetService("ReplicatedStorage").Package.Events.cha:InvokeServer('Blacknwhite27')
